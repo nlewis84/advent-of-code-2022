@@ -24,8 +24,8 @@ for (let i = 0; i < lines.length; i++) {
         : move === 'Y'
         ? 3
         : 6
-      // this last bit assumes that opponent is C
-      : move === 'X'
+      : // this last bit assumes that opponent is C
+      move === 'X'
       ? 6
       : move === 'Y'
       ? 0
@@ -68,8 +68,8 @@ for (let i = 0; i < lines.length; i++) {
         : result === 'Y'
         ? 2
         : 3
-      // this last bit assumes that opponent is C
-      : result === 'X'
+      : // this last bit assumes that opponent is C
+      result === 'X'
       ? 2
       : result === 'Y'
       ? 3
