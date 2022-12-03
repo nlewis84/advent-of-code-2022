@@ -118,8 +118,8 @@ for (let i = 0; i < backpack2.length; i++) {
   const secondElf = item.secondElf.split('');
   const thirdElf = item.thirdElf.split('');
 
-  const sharedItemType = firstElf.find((letter) =>
-    secondElf.includes(letter) && thirdElf.includes(letter)
+  const sharedItemType = firstElf.find(
+    (letter) => secondElf.includes(letter) && thirdElf.includes(letter)
   );
   const sharedItemTypePriority =
     sharedItemType === sharedItemType.toLowerCase()
